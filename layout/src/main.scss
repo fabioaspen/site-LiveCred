@@ -1,0 +1,21 @@
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+$lc-dark: #2A3342;
+$lc-gray: #D8D8D8;
+$lc-orange: #E4A014;
+$lc-orange-light: #F2BF26;
+
+$theme-colors:(
+    "lc-dark": $lc-dark,
+    "lc-gray": $lc-gray,
+    "lc-orange": $lc-orange,
+    "lc-orange-light": $lc-orange-light
+);
+
+$link-color: $lc-orange-light;
+$link-hover-color: darken($link-color, 15%);
+$enable-rounded: false;
+
+@import "../node_modules/bootstrap/scss/bootstrap";
