@@ -37,4 +37,8 @@ $enable-rounded: false;
     border-right: none !important;
 }
 
+.banner-header{
+    min-height: 300px;
+    object-fit: cover;
+}
 @import "../node_modules/bootstrap/scss/bootstrap";
