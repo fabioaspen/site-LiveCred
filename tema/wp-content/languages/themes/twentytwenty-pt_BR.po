@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Themes - Twenty Twenty package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2019-12-18 12:18:02+0000\n"
+"PO-Revision-Date: 2020-04-01 11:56:14+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -56,6 +56,10 @@ msgstr "As exibições são produzidas pelo UMoMA em colaboração com artistas 
 #: inc/starter-content.php:133
 msgid "With seven floors of striking architecture, UMoMA shows exhibitions of international contemporary art, sometimes along with art historical retrospectives. Existential, political and philosophical issues are intrinsic to our programme. As visitor you are invited to guided tours artist talks, lectures, film screenings and other events with free admission"
 msgstr "Com sete andares de arquitetura impressionante, o UMoMA têm exibições de arte contemporânea internacional, algumas vezes com retrospectivas de história da arte. Questões existenciais, políticas e filosóficas são intrínsecas ao nosso programa. Como visitante, você será convidado para passeios guiados com palestras, exibições de filmes e outros eventos livres."
+
+#: inc/starter-content.php:129
+msgid "&#8220;Cyborgs, as the philosopher Donna Haraway established, are not reverent. They do not remember the cosmos.&#8221;"
+msgstr "\"Ciborgues, como a filósofa Donna Haraway estabeleceu, não são reverentes. Eles não lembram o cosmos\"."
 
 #: inc/starter-content.php:113
 msgid "From Signac to Matisse"
