@@ -84,69 +84,30 @@
         </section>
         <!--Novidades-->
         <div class="row">
-            <section class="col-lg-8 col-12">
+            <div class="col-lg-8 col-12">
                 <h5 class="border-bottom pb-2"><i class="fas fa-newspaper"> Novidades</i></h5>  
-                <div class="row mt-4">
-                    <div class="col-md-6 col-12">
-                        <img src="assets/img-emprestimo.jpg" class="img-fluid" alt="imagem">
-                    </div>
-                    <div class="col-md-6 col-12 mt-3 mt-md-0">
-                        <p>
-                            <span class="badge badge-lc-gray">Seu dinheiro</span>
-                        </p>
-                        <h5>
-                            <a href="#">Não deixe a sorte garanti seu futuro. Aproveite o
-                           </a>
-                        </h5>
-                        <p class="mb-0">Não deixe a sorte garanti seu futuro. Aproveite o
-                        seguro de vida...
-                        </p>
-                        <P class="text-muted mt-3">
-                            <i class="far fa-clock"></i><small> Publicado em: 14/02/2020</small>
-                        </P>
-                    </div>
+
+                <!--Adicionando post na home do tema com condição-->
+                <?php if (have_posts()) : while(have_posts()) : the_post(); ?>
+                    <!--incluindo o arquivo content no index-->
+                    <?php get_template_part( 'content', get_post_format()); ?>
+
+                    <?php endwhile; ?>
+
+                <?php else : ?>
+                    
+                    <p class="lead">Nenhuma publicação encontrada</p>
+
+                <?php endif; ?>
+
+                <div class="mt-4 d-flex justify-content-between" >
+                <!--Botões de paginação Paginação-->
+                    <?php next_posts_link('Mais antigos'); ?>
+                    <?php previous_posts_link('Mais novos'); ?>
+
                 </div>
-                <div class="row mt-4">
-                    <div class="col-md-6 col-12">
-                        <img src="assets/img-emprestimo.jpg" class="img-fluid" alt="imagem">
-                    </div>
-                    <div class="col-md-6 col-12 mt-3 mt-md-0">
-                        <p>
-                            <span class="badge badge-lc-gray">Seu dinheiro</span>
-                        </p>
-                        <h5>
-                            <a href="#">Não deixe a sorte garanti seu futuro. Aproveite o
-                           </a>
-                        </h5>
-                        <p class="mb-0">Não deixe a sorte garanti seu futuro. Aproveite o
-                        seguro de vida...
-                        </p>
-                        <P class="text-muted mt-3">
-                            <i class="far fa-clock"></i><small> Publicado em: 14/02/2020</small>
-                        </P>
-                    </div>
-                </div>
-                <div class="row mt-4">
-                    <div class="col-md-6 col-12">
-                        <img src="assets/img-emprestimo.jpg" class="img-fluid" alt="imagem">
-                    </div>
-                    <div class="col-md-6 col-12 mt-3 mt-md-0">
-                        <p>
-                            <span class="badge badge-lc-gray">Seu dinheiro</span>
-                        </p>
-                        <h5>
-                            <a href="#">Não deixe a sorte garanti seu futuro. Aproveite o
-                           </a>
-                        </h5>
-                        <p class="mb-0">Não deixe a sorte garanti seu futuro. Aproveite o
-                        seguro de vida...
-                        </p>
-                        <P class="text-muted mt-3">
-                            <i class="far fa-clock"></i><small> Publicado em: 14/02/2020</small>
-                        </P>
-                    </div>
-                </div>     
-            </section>
+                  
+            </div>
             <!--sidebar-->
             <aside class="col-lg-4 d-none d-lg-block ">
                 <div class="card bg-lc-gray border-0 mb-4">
@@ -198,7 +159,7 @@
         </div>     
    </main>
    <!--roda pé-->
-   <footer class="bg-lc-gray pt-4 mt-5">
+   <footer class="bg-lc-gray pt-4 mt-4">
         <div class="container mb-4">
             <div class="row">
                 <div class="col-md-6 col-sm-12 mb-4 mb-md-0">

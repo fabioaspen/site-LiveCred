@@ -26,8 +26,26 @@ if (!function_exists('_wp_render_title_tag')) {
 	add_action( 'wp_head', 'lc_render_title');
 } 
 
-//ativar menu no tema wordpress
+//ativa menu no tema wordpress
 register_nav_menus( array(
 	'topo' => __('Menu no topo', 'livecred'),
 	'rodapé' => __('Menu no rodapé', 'livecred')
 ));
+
+//ativa miniaturas de imagem do post
+add_theme_support('post-thumbnails');
+//define o tamanho da miniatura
+set_post_thumbnail_size(1280, 720, true);
+
+//Definir o tamanho do resumo do poste na home 
+add_filter( 'excerpt_length', function($length) {
+	return 15;
+});
+
+//Definir o estilo da paginação
+add_filter( 'next_posts_link_attributes', 'posts_link_attributes');
+add_filter( 'previous_posts_link_attributes', 'posts_link_attributes');
+
+function posts_link_attributes() {
+	return 'class="btn btn-lc-orange"';
+}
