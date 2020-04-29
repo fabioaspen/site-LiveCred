@@ -2,12 +2,12 @@
 # This file is distributed under the same license as the WordPress - 5.4.x - Development - Administration package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2020-03-31 21:55:46+0000\n"
+"PO-Revision-Date: 2020-04-24 18:28:53+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: GlotPress/2.4.0-alpha\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
 "Language: pt_BR\n"
 "Project-Id-Version: WordPress - 5.4.x - Development - Administration\n"
 
@@ -556,7 +556,7 @@ msgstr "<a href=\"https://wordpress.org/support/article/dashboard-updates-screen
 
 #: wp-admin/update-core.php:251
 msgid "<strong>Important:</strong> Before updating, please <a href=\"https://wordpress.org/support/article/wordpress-backups/\">back up your database and files</a>. For help with updates, visit the <a href=\"https://wordpress.org/support/article/updating-wordpress/\">Updating WordPress</a> documentation page."
-msgstr "<strong>Importante:</strong> Antes de atualizar, <a href=\"https://wordpress.org/support/article/wordpress-backups/\">faça uma código de segurança (backup) do seu banco de dados e arquivos</a>. Para obter ajuda com atualizações, visite a página <a href=\"https://wordpress.org/support/article/updating-wordpress/\">Atualizando o WordPress</a> da documentação"
+msgstr "<strong>Importante:</strong> Antes de atualizar, <a href=\"https://br.wordpress.org/support/article/wordpress-backups/\">faça uma cópia de segurança (backup) do seu banco de dados e arquivos</a>. Para obter ajuda com atualizações, visite a página <a href=\"https://br.wordpress.org/support/article/updating-wordpress/\">Atualizando o WordPress</a> da documentação."
 
 #: wp-admin/nav-menus.php:604
 msgid "<a href=\"https://wordpress.org/support/article/appearance-menus-screen/\">Documentation on Menus</a>"

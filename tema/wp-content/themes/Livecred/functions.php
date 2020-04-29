@@ -60,3 +60,58 @@ register_sidebar(
         'before_title' => '<h5>',
         'after_title' => '</h5>',
     ));
+
+//widget Cards
+register_sidebar( 
+	array(
+        'name' => 'Cards',
+        'id' => 'cards',
+        'before_widget' => '',
+        'after_widget' => '',
+        'before_title' => '',
+        'after_title' => ''
+	));
+	
+//criar post personalizado
+function lc_cpt() {
+
+	//Informa os textos da interface
+	$labels = array(
+		'name'		        => _x('Depoimentos','Depoimentos dos clientes', 'Livecred'),
+		'singular_name' 	=> _x('Depoimento', 'Depoimento do cliente', 'Livecred'),
+		'menu_name'			=> __('Depoimento', 'Livecred'),
+		'all_items' 		=> __('Todos os depoimentos', 'Livecred'),
+		'view_item'			=> __('Ver depoimento', 'Livecred'),
+		'add_new_item' 		=> __('Adicionar depoimento', 'Livecred'),
+		'add_new' 			=> __('Adicionar novo', 'Livecred'),
+		'edit_item'			=> __('Editar depoimento', 'Livecred'),
+		'update_item' 		=> __('Atualizar depoimento', 'Livecred'),
+		'search_items'		=> __('Buscar depoimento', 'Livecred'),
+		'not_found' 		=> __('Não encontrado', 'Livecred'),
+		'not_fund_in_trash' => __('Não encontrado no lixo', 'Livecred')
+	);
+
+	$args = array(
+		'label' 				=> __('Depoimentos', 'Livecred'),
+		'description'			=> __('Depoimentos dos clientes', 'Livecred'),
+		'labels'				=> $labels,
+		'supports'				=> array('title', 'editor'),
+		'hierarchical'			=> false,
+		'show_in_menu'			=> true,
+		'public'				=> true,
+		'show_ui'				=> true,
+		'show_in_nav_menus'		=> true,
+		'show_in_admin_bar'		=> true,
+		'menu_position'			=> 5,
+		'menu_icon'				=> 'dashicons-format-aside',
+		'can_export'			=> true,
+		'has_archive'			=> true,
+		'exclude_from_search'	=> true,
+		'publicy_queryable' 	=> true,
+		'capability_type' 		=> 'post'
+	);
+
+	register_post_type('depoimentos', $args);
+}
+
+add_action('init', 'lc_cpt', 0);
